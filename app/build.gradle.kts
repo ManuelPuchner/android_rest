@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.rest"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.rest"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -50,7 +50,10 @@ android {
 }
 
 dependencies {
-
+    implementation (libs.retrofit) // Retrofit
+    implementation (libs.converter.gson)
+    implementation (libs.androidx.lifecycle.viewmodel.compose)
+    implementation (libs.kotlinx.coroutines.android)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
