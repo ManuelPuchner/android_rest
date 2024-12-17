@@ -50,7 +50,10 @@ android {
 }
 
 dependencies {
-
+    implementation (libs.retrofit) // Retrofit
+    implementation (libs.converter.gson)
+    implementation (libs.androidx.lifecycle.viewmodel.compose)
+    implementation (libs.kotlinx.coroutines.android)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
