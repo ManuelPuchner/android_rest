@@ -12,7 +12,7 @@ import com.example.rest.viewmodel.TodoViewModel
 
 @Composable
 fun TodoScreen(viewModel: TodoViewModel =
-                   androidx.lifecycle.viewmodel.compose.viewModel()) {
+                   androidx.lifecycle.viewmodel.compose.viewModel(), modifier: Modifier) {
     val todos = viewModel.todos.collectAsState()
     LazyColumn(
         modifier = Modifier.fillMaxSize().padding(16.dp),
